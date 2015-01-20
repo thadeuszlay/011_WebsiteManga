@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Manganize Me</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="/bootstrap-3.3.2-dist/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css">
+
+<style>
+$uicolor: #000;
+$uifontcolor: #ccc;
+$uifonthover: #fff;
+$color0: Wheat;
+$color1: Olive;
+$color2: Orange;
+$color3: Red;
+$color4: Purple;
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+li{
+	display: inline;
+}
+body {
+  font-family:Roboto;
+  text-rendering: optimizeLegibility!important;
+  font-size:.9em;
+  font-weight: 300;
+  margin:0;
+}
+* {
+  margin:0;
+  padding:0;
+  transition: all 400ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+a, a:visited {
+  color:$uifontcolor;
+  text-decoration:none;
+}
+a:hover { color:$uifonthover }
+h1, h2, p { color:$uicolor }
+h2 { padding-top:100px }
+ul { list-style: none }
+.container {
+  width:600px;
+  margin:0 auto;
+}
+#icons { margin:0 auto }
+.icon {
+  text-decoration:none;
+  font-size:2em;
+  padding:20px 30px;
+  background-color:$uicolor;
+  font-weight: bold;
+  border-radius: 50%;
+  margin-left:10px;
+}
+.icon:hover {
+  background-color:$color0;
+  box-shadow: 
+  	0 6px 20px 0 rgba(0, 0, 0, 0.19),
+   0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+#icons {
+  a, #icons a:visited { color:$color0; }
+  a:hover { color:$uicolor; }
+}
+.level { text-align: center; }
+#menu {
+  position:fixed;
+  height:50px;
+  width:100%;
+  top:-55px;
+  left:0;
+  color:$uifontcolor;
+  transition: all 0.5s ease;
+    li {
+    float:left;
+    padding:17px 10px;
+      :hover {
+        cursor:pointer;
+        color:$uifonthover;
+      }
+      :nth-child(1) {
+        padding-right:40px;
+      }
+    }
+}
+#top {
+  height:100vh;
+  background:$color0;
+}
+.one, .two, .three, .four {
+  min-height:calc(100vh + 200px);
+  max-height:1000px;
+}
+.one, .sel:nth-child(2) { background:$color1 }
+.two, .sel:nth-child(3) { background:$color2 }
+.three, .sel:nth-child(4) { background:$color3 }
+.four, .sel:nth-child(5) { background:$color4 }
+#footer {
+  position:fixed;
+  height:250px;
+  width:100%;
+  left:0;
+  color:$uifonthover;
+  padding:1rem 0;
+    h3:hover {
+      cursor:pointer;
+    }
+}
+#menu, #footer { background: $uicolor }
+.up {
+  top:calc(100vh - 250px);
+    h3 {
+      display:none;
+    }
+}
+.middle { top:calc(100vh - 50px) }
+.down { top:calc(100vh) }
+#social {
+  display:block;
+    li {
+      float:left;
+      margin-right:30px;
+      margin-top:80px;
+    }
+}
+svg {
+  width:50px;
+  height:50px;
+}
+</style>
+</head>
+<body>
+<div id="menu">
+  <div class="container">
+  <ul>
+    <li><h3><a href="#lvl">TOP</a></h3></li>
+    <li><a href="#lvl1">Panel 1</a></li>
+    <li><a href="#lvl2">Panel 2</a></li>
+    <li><a href="#lvl3">Panel 3</a></li>
+    <li><a href="#lvl4">Panel 4</a></li>
+  </ul>
+  </div>
+</div>
+
+<a name="lvl"><div id="top" class="level">
+  <br><br><br>
+  <h1>Pick a Quick Link or Scroll Down
+  </h1>
+  <br><br><br><br><br>
+  <div id="icons">
+    <a href="#lvl1" class="icon">1</a>
+    <a href="#lvl2" class="icon">2</a>
+    <a href="#lvl3" class="icon">3</a>
+    <a href="#lvl4" class="icon">4</a>
+  </div>
+</div>
+</a>
+
+<div id="panels">
+  <a name="lvl1"><div class="level one">
+    <h2>Panel 1</h2>
+  </div></a>
+  <a name="lvl2"><div class="level two">
+    <h2>Panel 2</h2>
+    <p>asdfwe fwef we afw efw fawf wef fwef we afw efw fawf wef fwef we afw efw fawf wef fwef we afw efw fawf wef fwef we afw efw fawf wef fwef we afw efw fawf wef<br />
+    <img src="http://cdn.searchenginejournal.com/wp-content/uploads/2013/09/google-panda-penguin.jpg"></p>
+  </div></a>
+  <a name="lvl3"><div class="level three">
+    <h2>Panel 3</h2>
+  </div></a>
+  <a name="lvl4"><div class="level four">
+    <h2>Panel 4</h2>
+  </div></a>
+</div>
+
+<div id="footer">
+  <div class="container">
+  <h3>MORE</h3>
+  <ul id="social">
+    <li><svg overflow="visible">
+      <circle cx="25" cy="25" r="25" fill="#2d2d2d" /></svg></li>
+    <li><svg overflow="visible">
+      <circle cx="25" cy="25" r="25" fill="#2d2d2d" /></svg></li>
+    <li><svg overflow="visible">
+      <circle cx="25" cy="25" r="25" fill="#2d2d2d" /></svg></li>
+    <li><svg overflow="visible">
+      <circle cx="25" cy="25" r="25" fill="#2d2d2d" /></svg></li>
+    <li><svg overflow="visible">
+      <circle cx="25" cy="25" r="25" fill="#2d2d2d" /></svg></li>
+  </ul>
+  </div>
+</div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" >
+var homeH = $( window ).height(),
+    pH = [];
+pH.push("0"); 
+
+// create array with panel heights
+for (var s=1; s<5; s++) { 
+  var po = $("#panels a:nth-child("+s+")").position();
+  pH.push( Math.round(po.top) );
+};
+
+// link the footer MORE
+$("#footer h3").click(function() {
+  $("#footer").addClass("up").removeClass("middle");
+})
+
+$( window ).scroll(function() {
+  
+  // toggle top menu
+  if ( $( window ).scrollTop() < homeH/2) {
+    $("#menu ul li").removeClass("sel");
+    $("#menu").css("top", "-55px");
+    $("#footer").addClass("down").removeClass("middle");
+  } else {
+    $("#menu").css("top", "0");
+    $("#footer").addClass("middle").removeClass("down");
+  };
+  
+  // toggle top menu selection
+  for (var i=1;i<5;i++) {
+    if ( $( window ).scrollTop() > pH[i]-50 ) { 
+      $("#menu ul li").removeClass("sel");
+      $("#menu ul li:nth-child("+(i+1)+")").addClass("sel");
+     }
+  };
+  
+  // toggle footer
+  if ( $( window ).scrollTop() > homeH*5 )
+    $("#footer").addClass("up").removeClass("middle");
+  else
+    $("#footer").removeClass("up").addClass("middle");
+});
+
+// animating anchor link scrolling
+// snippet from css-tricks 
+// css-tricks.com/snippets/jquery/smooth-scrolling
+
+$("a[href*=#]:not([href=#])").click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 700);
+        return false;
+      }
+    }
+  });
+
+</script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
 <title>Manganize Me</title>
 
-	<link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap-theme.min.css"/>
 	<link rel="stylesheet" type="text/css" href="CSS/scrolling.css"/>
 	<link rel="stylesheet" type="text/css" href="CSS/flipGallery.css"/>

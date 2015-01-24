@@ -1,0 +1,86 @@
+div.level.four {
+  color: #616161;
+  font: 1.4em Helvetica;
+  font-weight: 200;
+  background: #00F;
+  -webkit-backface-visibility: hidden;
+}
+.comic-pane {
+  width: 600px;
+  height: 220px;
+  top: 60px;
+  position: relative;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.text {
+  width: 320px;
+  height: 200px;
+  position: absolute;
+  left: 37px;
+  background: white;
+  transform: rotate(0deg) skew(-15deg);
+  z-index: 0;
+  border-color: black;
+  border-style: solid;
+  border-width: 5px 3px 5px 0px;
+  border-radius: 0% 33% 90% 5%/2% 4% 4% 95%;
+}
+.text:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 200px;
+  width: 60px;
+  left: -29px;
+  top: -5px;
+  transform: skew(15deg);
+  background: white;
+   -webkit-backface-visibility: hidden;
+  border-width: 5px 0px 5px 6px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 99% 0% 90% 15%/2% 0% 1% 95%;
+}
+.text p {
+  width: 260px;
+  line-height: 1.2em;
+  margin-top: 60px;
+  margin-left: 30px;
+  transform: skew(15deg); 
+}
+.comic-image {
+  width: 320px;
+  height: 200px;
+  right: -90px;
+  top: 0;
+  transform: skew(-15deg);
+  position: absolute;
+  overflow: hidden;
+  border-width: 5px 4px 5px 6px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 90% 93% 90% 5%/2% 32% 4% 95%;
+}
+.comic-image::after{
+	content: "";
+	height: 200px;
+	position: absolute;
+	top:0px;
+	left: 220px;
+	  border-width: 5px 4px 5px 6px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 0% 33% 90% 5%/2% 4% 4% 95%;
+  background-color: red;
+  transform: skew(15deg);
+} 
+.cimg {
+  display: block;
+  transform: skew(15deg);
+  width: 290px;
+  height: 200px;
+  position: absolute;
+  left: -27px;
+  top: 0;
+}

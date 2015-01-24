@@ -2,19 +2,18 @@
 <html>
 <head>
 <title>Manganize Me</title>
-
 	<link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap-theme.min.css"/>
 	<link rel="stylesheet" type="text/css" href="CSS/scrolling.css"/>
 	<link rel="stylesheet" type="text/css" href="CSS/flipGallery.css"/>
 	<link rel="stylesheet" type="text/css" href="CSS/comicPanel.css"/>
-	
+	<link rel="stylesheet" type="text/css" href="CSS/comicPanelRules.css"/>
 </head>
 <body>
 
 <a name="lvl"><div id="top" class="level">
   <br><br><br>
-  <h1>Please click on one of drawer below or scroll Down</h1>
+  <h1>Please select one of a drawer below or scroll down</h1>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <div id="icons">
   	<a href="#lvl1" class="icon" id="icon1">About</a>
@@ -29,6 +28,10 @@
 <div id="panels">
   <a name="lvl1"><div class="level one">
     <h2>About</h2>
+    <p>You can manganize your pictures here, if the following rules are met:</p>
+
+	<p>Please view my pencil portrait gallery below to give you a general idea what I will accepted. If you like, you can send your request along with your picture to me.</p>
+
   </div></a>
   <a name="lvl2"><div class="level two">
     <h2>Manga</h2>
@@ -54,7 +57,7 @@
 			</div>
 		</div>
 	</div>
-		<div id="galleryController" class="comicPanel">
+		<div id="galleryController" class="comicPanel" style="height: 50px;">
 			<div style="border: 1px solid green; margin: 0 2px;"></div>
 			<div style="border: 1px solid green; margin: 0 2px;"></div>
 			<div style="border: 1px solid green; margin: 0 2px;"></div>
@@ -63,27 +66,35 @@
   </div></a>
   <a name="lvl4"><div class="level four">
     <h2>Rules</h2>
-You can manganize your pictures here, if the following rules are met:
-
-Only style of commissions I'm currently open to. Send a single person photo reference and I'll send you back a the picture when a spot becomes available. You can pay me whatever price you think my work was worth to you. Similar commission work typically costs around EURO 15.
-
-Type of emails/photos that will get ignored/trashed:
-<ul>
-    <li>Missing a photo</li>
-    <li>Not including "I want this in Anime style" or "I want this in Chibi style"</li>
-    <li>Deadlines ("Must be done for a birthday, anniversary, live event...")</li>
-    <li>Photos of Couples or Groups</li>
-    <li>Extreme close ups</li>
-    <li>NSFL(Not Safe For Life) photos</li>
-    <li>Blurry, small, bland, or complicated photos</li>
-    <li>Person interacting with medium to large objects</li>
-    <li>Person interacting with other people</li>
-    <li>More than one pet</li>
-    <li>Art Trades</li>
-    <li>Not relating at all to portraits</li>
-    <li>Offers to work on your commercial projects</li>
-</ul>
-Please view my pencil portrait gallery below to give you a general idea what I will accepted. If you like, you can send your request along with your picture to me at:
+    
+    <div class="comic-pane col-md-6">
+  		<div class="text">
+  			<div class="passage">
+  				<p>Only style of commissions I'm currently open to. Send a single person photo reference and I'll send you back a the picture when a spot becomes available. You can pay me whatever price you think my work was worth to you. Similar commission work typically costs around EURO 15.
+				<br />
+					Type of emails/photos that will get ignored/trashed:
+				<ul>
+    				<li>Missing a photo</li>
+    				<li>Not including "I want this in Anime style" or "I want this in Chibi style"</li>
+    				<li>Deadlines ("Must be done for a birthday, anniversary, live event...")</li>
+    				<li>Photos of Couples or Groups</li>
+    				<li>Extreme close ups</li>
+    				<li>NSFL(Not Safe For Life) photos</li>
+    				<li>Blurry, small, bland, or complicated photos</li>
+    				<li>Person interacting with medium to large objects</li>
+    				<li>Person interacting with other people</li>
+    				<li>More than one pet</li>
+    				<li>Art Trades</li>
+    				<li>Not relating at all to portraits</li>
+    				<li>Offers to work on your commercial projects</li>
+				</ul>
+				</p>
+  			</div>
+  		</div>
+  		<div class="comic-image"><span class="cimg"><img src="pic/photo_22353_20120820.jpg" alt="pic"></div>
+  		
+	</div>
+<div class="col-md-3"></div>
 
 Sorry for the all the rules/litmus test. It simply makes my life a whole lot easier to focus on drawing for my customers and not having to email people back and forth all day with these details. If you did follow everything, don't be offended if I don't get back to you! I may be with other customers, the photo just doesn't inspire me, working on other bigger projects, family stuff...
 

@@ -2,63 +2,87 @@
 <html>
 <head>
 <title>Grid Test</title>
-	<link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap-theme.min.css"/>
-	<link rel="stylesheet" href="flipGallery.css"/>
-
 <style type="text/css">
-div.level.three{
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    background-color: #b0e0e6;
+body {
+  color: #616161;
+  font: 1.4em Helvetica;
+  font-weight: 200;
+  background: #00F;
+  -webkit-backface-visibility: hidden;
 }
-div.comicPanel{
-		height: 300px;
-		border: 8px solid white;	
-		margin: 5px 2px;
-		background-color: rgba(220, 222, 222, .6);
+.comic-pane {
+  width: 600px;
+  height: 220px;
+  top: 60px;
+  position: relative;
+  margin: 0px auto;
+  overflow: hidden;
 }
-	#bubble{
-		max-height: 180px;
-		max-width: 250px;
-		border-radius: 10px;
-		word-wrap: break-word;
-		background-color: white;
-		position: relative;
-		left: 10px;
-		top: 10px;
-		text-align: justify;
-		float: right;
-		padding: 2px 7px;
-	}
-	#bubble::after{
-		content: "";		
-		border-top: 10px solid transparent;
-		border-right: 20px solid white;
-		border-bottom: 10px solid transparent;	
-		position: absolute;
-		left: -20px;
-		top: 10px;
-	}
+.text {
+  width: 320px;
+  height: 200px;
+  position: absolute;
+  left: 37px;
+  background: white;
+  transform: rotate(0deg) skew(-15deg);
+  z-index: 1;
+  border: 2px solid black;
+  border-width: 5px 3px 5px 0px;
+  border-radius: 0% 33% 90% 5%/2% 4% 4% 95%;
+}
+.text:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 200px;
+  width: 60px;
+  left: -29px;
+  top: -5px;
+  transform: skew(15deg);
+  background: white;
+   -webkit-backface-visibility: hidden;
+  border-width: 5px 0px 5px 6px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 99% 0% 90% 15%/2% 0% 1% 95%;
+}
+.text p {
+  width: 260px;
+  line-height: 1.2em;
+  margin-top: 60px;
+  margin-left: 30px;
+  transform: skew(15deg); 
+}
+.comic-image {
+  width: 320px;
+  height: 200px;
+  right: -90px;
+  top: 0;
+  transform: skew(-15deg);
+  position: absolute;
+  overflow: hidden;
+} 
+.cimg {
+  display: block;
+  transform: skew(15deg);
+  width: 290px;
+  height: 200px;
+  position: absolute;
+  left: -27px;
+  top: 0;
+  background-size: cover;
+}
 </style>
-
 </head>
-<div class="level three">
-<div id="description" class="comicPanel col-md-7">
-	<p id="bubble">On the next panel you can see a gallery. Move your mouse over the image and you'll see the original picutre. Clicking on the arrow buttons below will switch to the next picture.</p>
+<body>
+<div class="comic-pane">
+  <div class="text">
+  <div class="passage">
+  		<p>"Here are you :alsf laskfj lwkefj lawefk waeflawkejf lawkefj lawkefj lawekfj lawekjf lawek j"
+		</p>
+  	</div>
+  </div>
+  <div class="comic-image"><span class="cimg"><img src="../pic/man-103041_640.jpg" alt="pic"></div>
 </div>
-<div id="gallery" class="comicPanel col-md-4" style="overflow: hidden;">
-
-<div class="gallery-item flip" ontouchstart="this.classList.toggle('hover');" style="position: relative;">
-	<div class="flipper">
-		<div class="front">
-		</div>
-		<div class="back">
-		</div>
-	</div>
-</div>
-
-</div>
-</div>
+</body>
 </html>

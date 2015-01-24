@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap-theme.min.css"/>
 	<link rel="stylesheet" type="text/css" href="CSS/scrolling.css"/>
 	<link rel="stylesheet" type="text/css" href="CSS/flipGallery.css"/>
+	<link rel="stylesheet" type="text/css" href="CSS/comicPanel.css"/>
+	
 </head>
 <body>
 
@@ -35,22 +37,22 @@
   </div></a>
   <a name="lvl3"><div class="level three">
     <h2>Chibi</h2>
-     <div class="gallery-item flip" ontouchstart="this.classList.toggle('hover');" style="position: relative;">
-	      <div class="flipper">
-		        <div class="front">
-          <img src="http://31.media.tumblr.com/114b7ebe9d5297f12a4ff77d7e2baa6c/tumblr_n397mmSaR31slhhf0o1_1280.jpg"/>
-		        </div>
-		        <div class="back">
-          <div class="text">
-           <span>Hello!</span>
-           <span>I'll flip For You!</span>
-        </div>
-              <div class="icon">
-          <span><i class="fa fa-check-circle"></i></span>
-         </div>
-		        </div>
-	      </div>
-		</div>	
+     <div id="description" class="comicPanel col-md-7">
+	<p id="bubble">On the next panel you can see a gallery. Move your mouse over the image and you'll see the original picutre. Clicking on the arrow buttons below will switch to the next picture.</p>
+</div>
+<div id="gallery" class="comicPanel col-md-4" style="overflow: hidden;">
+
+<div class="gallery-item flip" ontouchstart="this.classList.toggle('hover');" style="position: relative;">
+	<div class="flipper">
+		<div class="front">
+		</div>
+		<div class="back">
+		</div>
+	</div>
+</div>
+
+</div>
+	
   </div></a>
   <a name="lvl4"><div class="level four">
     <h2>Rules</h2>

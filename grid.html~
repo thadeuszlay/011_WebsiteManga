@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="flipGallery.css"/>
 
 <style type="text/css">
-body{
+div.level.three{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -30,7 +30,7 @@ div.comicPanel{
 		top: 10px;
 		text-align: justify;
 		float: right;
-		padding: 2px 5px;
+		padding: 2px 7px;
 	}
 	#bubble::after{
 		content: "";		

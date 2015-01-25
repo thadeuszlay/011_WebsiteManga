@@ -12,8 +12,8 @@ $('#arrowRlvl2').click(function () {
 		nextDot=$('.dot').first();
 	}
 	
-	currentPic.fadeOut(600).removeClass('current-pic');
-	nextPic.fadein(600).addClass('current-pic');
+	currentPic.fadeOut(500).removeClass('current-pic');
+	nextPic.fadeIn(600).addClass('current-pic');
 	
    currentDot.removeClass('current-dot');
    nextDot.addClass('current-dot');
@@ -31,7 +31,7 @@ $('#arrowLlvl2').click(function () {
       prevDot = $('.dot').last();
     }
     
-    currentPic.fadeOut(600).removeClass('current-pic');
+    currentPic.fadeOut(500).removeClass('current-pic');
     prevPic.fadeIn(600).addClass('current-pic');
 
     currentDot.removeClass('current-dot');

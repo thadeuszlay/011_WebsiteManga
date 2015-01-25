@@ -1,0 +1,16 @@
+@mixin rounded($radius: 5px){/*(optional) add a default value of 5px*/
+    -webkit-border-radius: $radius; /*chrome, safari*/
+    -moz-border-radius: $radius; /*firefox*/
+    -ms-border-radius: $radius; /*IE*/
+    -o-border-radius: $radius; /*opera*/
+    border-radius: $radius; /*official form always at the bottom*/
+}
+
+#box{
+    @include rounded;/*without argument*/
+    @include rounded(10px);/*with argument*/
+}
+
+#box2{
+    @include rounded;
+}

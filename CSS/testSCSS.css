@@ -1,0 +1,17 @@
+.rounded {
+  -webkit-border-radius: 5px;
+  /*chrome, safari*/
+  -moz-border-radius: 5px;
+  /*firefox*/
+  -ms-border-radius: 5px;
+  /*IE*/
+  -o-border-radius: 5px;
+  /*opera*/
+  border-radius: 5px;
+  /*official form always at the bottom*/ }
+
+#box3 {
+  @extended .rounded;
+  color: red; }
+
+/*# sourceMappingURL=testSCSS.css.map */

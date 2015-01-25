@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="CSS/scrolling.css"/>
 	<link rel="stylesheet" type="text/css" href="CSS/flipGallery.css"/>
 	<link rel="stylesheet" type="text/css" href="CSS/comicPanel.css"/>
+	<link rel="stylesheet" type="text/css" href="CSS/pesticide.css">
 <!--	<link rel="stylesheet" type="text/css" href="CSS/comicPanelRules.css"/>-->
 </head>
 <body>
@@ -135,40 +136,53 @@
 </div>
 
 <div id="menu">
-  <div class="container">
-  <ul>
-    <li><a href="#lvl">&#9650;</a></li>
-    <li><a href="#lvl1">About</a></li>
-    <li><a href="#lvl2">Manga</a></li>
-    <li><a href="#lvl3">Chibi</a></li>
-    <li><a href="#lvl4">Rules</a></li>
-    <li><a href="#lvl5">Creator</a></li>
-  </ul>
-  </div>
+	<div class="container">
+  		<ul>
+    		<li><a href="#lvl">&#9650;</a></li>
+    		<li><a href="#lvl1">About</a></li>
+    		<li><a href="#lvl2">Manga</a></li>
+    		<li><a href="#lvl3">Chibi</a></li>
+    		<li><a href="#lvl4">Rules</a></li>
+    		<li><a href="#lvl5">Creator</a></li>
+  		</ul>
+  	</div>
 </div>
 
 <div id="footer">
-  <div class="container">
-  <h3>MORE</h3>
-  <ul id="social">
-  <!--git hub-->
-    <li> <svg width="4" height="8">
-  <rect x="5" y="2" rx="2" ry="2" width="25" height="25"
-  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
-</svg> </li>
-	<!--youtube-->
-    <li><svg overflow="visible">
-      <circle cx="25" cy="25" r="25" fill="#2d2d2d" /></svg></li>
-	<!--twitter-->    
-    <li><svg overflow="visible">
-      <circle cx="25" cy="25" r="25" fill="#2d2d2d" /></svg></li>
-	<!--blog spot-->    
-    <li><svg overflow="visible">
-      <circle cx="25" cy="25" r="25" fill="#2d2d2d" /></svg></li>
-	<!--projects--> 
-    <li><svg overflow="visible">
-      <circle cx="25" cy="25" r="25" fill="#2d2d2d" /></svg></li>
-  </ul>
+	<div class="container">
+  		<h3>MORE</h3>
+  		<ul id="social">
+  			<!--git hub-->
+    		<li>
+    			<svg width="4" height="8">
+  					<rect x="5" y="2" rx="2" ry="2" width="25" height="25" style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+				</svg>
+			</li>
+			<!--youtube-->
+    		<li>
+    			<svg overflow="visible">
+      			<circle cx="25" cy="25" r="25" fill="#2d2d2d" />
+      		</svg>
+      	</li>
+			<!--twitter-->    
+    		<li>
+    			<svg overflow="visible">
+      			<circle cx="25" cy="25" r="25" fill="#2d2d2d" />
+      		</svg>
+      	</li>
+			<!--blog spot-->    
+    		<li>
+    			<svg overflow="visible">
+	      		<circle cx="25" cy="25" r="25" fill="#2d2d2d" />
+      		</svg>
+      	</li>
+			<!--projects--> 
+    		<li>
+    			<svg overflow="visible">
+      			<circle cx="25" cy="25" r="25" fill="#2d2d2d" />
+      		</svg>
+      	</li>
+  		</ul>
   </div>
 </div>
 

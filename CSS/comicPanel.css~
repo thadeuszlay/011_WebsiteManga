@@ -4,7 +4,7 @@ div.centerFrame{
    width: 80%;
    overflow: hidden;
 	z-index: 999px;
-}*/
+}
 div.comicPanel{
 		height: 300px;
 		border-top: 2px solid black;

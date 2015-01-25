@@ -4,7 +4,9 @@
   width: 400px;
   height: 250px;
   z-index: 1;
-  left: -21px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
   border: 1px solid black;
   perspective: 1000;
 }

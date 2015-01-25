@@ -1,11 +1,10 @@
-div.level.three{
+div.centerFrame{
    margin-left: auto;
    margin-right: auto;
    width: 80%;
-   background-color: #b0e0e6;
    overflow: hidden;
 	z-index: 999px;
-}
+}*/
 div.comicPanel{
 		height: 300px;
 		border-top: 2px solid black;

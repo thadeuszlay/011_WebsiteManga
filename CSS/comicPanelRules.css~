@@ -60,7 +60,7 @@ div.level.four {
   border-width: 5px 4px 5px 6px;
   border-color: black;
   border-style: solid;
-  border-radius: 90% 93% 90% 5%/2% 32% 4% 95%;
+  border-radius: 90% 93% 90% 5%/2% 72% 4% 95%;
 }
 .comic-image::after{
 	content: "";
@@ -83,4 +83,13 @@ div.level.four {
   position: absolute;
   left: -27px;
   top: 0;
+}
+@media (max-width: 500px){
+	.text{
+  transform: rotate(0deg) skew(0deg);
+  border-color: green;
+  border-style: solid;
+  border-width: 5px 3px 5px 0px;
+  
+  }
 }

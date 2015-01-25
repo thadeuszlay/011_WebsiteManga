@@ -44,7 +44,7 @@
 				</div>
 				<div class=" col-md-4">
 					<div id="gallery" class="comicPanel" style="overflow: hidden; height: 250px;">
-						<div id="flipContainer">
+						<div id="flipContainer" class="portrait current-pic">
 							<div id="flipCard" class="shadow">
   								<div class="front face">
     								<img src="pic/cora.jpg" alt="front"/>
@@ -54,11 +54,40 @@
   								</div>
 							</div>
 						</div>
+						
+						<div id="flipContainer" class="portrait">
+							<div id="flipCard" class="shadow">
+  								<div class="front face">
+    								<img src="pic/devil.jpg" alt="front"/>
+  								</div>
+  								<div class="back face center">
+									<img src="pic/baby-in-snow.jpg" alt="back"/>
+  								</div>
+							</div>
+						</div>
+							
+						<div id="flipContainer" class="portrait">
+							<div id="flipCard" class="shadow">
+  								<div class="front face">
+    								<img src="pic/man-103041_640.jpg" alt="front"/>
+  								</div>
+  								<div class="back face center">
+									<img src="pic/yawn.jpg" alt="back"/>
+  								</div>
+							</div>
+						</div>
+						
+						
 					</div>
 					<div id="galleryController" class="comicPanel">
-						<div style="border: 1px solid green; margin: 0 2px;"></div>
-						<div style="border: 1px solid green; margin: 0 2px;"></div>
-						<div style="border: 1px solid green; margin: 0 2px;"></div>
+					<!--has to be refactored-->
+						<div id="arrowLlvl2" style="background-color: green; width: 20px; height: 20px; border: 1px solid green; margin: 0 2px; float: left;"></div>
+						<div class="dot active-dot" style="width: 20px; height: 20px; border: 1px solid blue; margin: 0 2px; float: left;"></div>						
+						<div class="dot" style="width: 20px; height: 20px; border: 1px solid red; margin: 0 2px; float: left;"></div>
+						<div class="dot" style="width: 20px; height: 20px; border: 1px solid yellow; margin: 0 2px; float: left;"></div>
+						<div class="dot" style="width: 20px; height: 20px; border: 1px solid grey; margin: 0 2px; float: left;"></div>						
+						<div id="arrowRlvl2" style="background-color: green; width: 20px; height: 20px; border: 1px solid purple; margin: 0 2px; float: right;"></div>
+						
 					</div>
 				</div>
   			</div>
@@ -190,5 +219,7 @@
 <script src="JS/jQuery.js"></script>
 <script src="JS/scrolling.js"></script>
 <script src="JS/action.js"></script>
+<script src="JS/gallery.js"></script>
+
 </body>
 </html>

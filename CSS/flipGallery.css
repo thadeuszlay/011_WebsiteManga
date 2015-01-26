@@ -2,7 +2,7 @@
   position: relative;
   margin: 0px;
   width: 400px;
-  height: 250px;
+  height: 100%;
   z-index: 1;
    margin-left: auto;
    margin-right: auto;
@@ -32,21 +32,19 @@
   display: block;
   transform: rotateY(180deg);
 }
-
 /*Gallery controller*/
 #galleryController{
 	height: 50px;
 }
-
 #arrowLlvl2 {
 	font-size: 22px;
-  position:relative;
-  top:0px;
-  width:20px;
-  text-align:center;
-  left:75px;
-  font-family:"Comic Sans MS", cursive, sans-serif;
-  color:blue;
+	font-family:"Comic Sans MS", cursive, sans-serif;  	
+  	position:relative;
+  	top:-2px;
+  	width:20px;
+  	text-align:center;
+  	left:55px;
+  	color:black;
 } 
 #arrowLlvl2:before {
     content:'';
@@ -54,7 +52,7 @@
     width:23px;
     height:23px;
     top:5px;
-    left:-65px;
+    left:-45px;
     border-radius: 10% 0 0 0;
     box-shadow:-2px -2px #000;
     transform:rotate(-45deg);
@@ -62,23 +60,22 @@
 #arrowLlvl2:after {
     content:'';
     position:absolute;
-    width:55px;
+    width:50px;
     height:30px;
     top:17px;
-    left:-70px;
+    left:-50px;
     border-radius:0% 90% 10% 0%/10% 90% 20% 0%;
     box-shadow:1px -3px #000;
 }
 
 #arrowRlvl2{
-font-size: 22px;
-  position:relative;
-  top:0px;
-  width:20px;
-  text-align:center;
-  left:-90px;
-  font-family:"Comic Sans MS", cursive, sans-serif;
-  color:blue;
+	font-size: 22px;
+	font-family:"Comic Sans MS", cursive, sans-serif;  position:relative;
+	top:-2px;
+  	width:20px;
+  	text-align:center;
+  	left:-70px;
+  	color:black;
 }
 #arrowRlvl2:before {
     content:'';
@@ -86,7 +83,7 @@ font-size: 22px;
     width:20px;
     height:20px;
     top:5px;
-    left:82px;
+    left:62px;
     border-radius: 10% 0 0 0;
     box-shadow:2px -2px #000;
     transform:rotate(45deg);
@@ -94,10 +91,34 @@ font-size: 22px;
 #arrowRlvl2:after {
     content:'';
     position:absolute;
-    width:45px;
+    width:40px;
     height:30px;
-    top:17px;
-    left:60px;
+    top:16px;
+    left:48px;
     border-radius:90% 0% 0% 90%/90% 0% 20% 0%;
-    box-shadow:0px -3px #000;
+    box-shadow:-1px -3px #000;
+}
+@media(max-width: 700px){
+	.dot{
+	width: 15px; 
+	height: 15px; 
+	}	
+}
+.dot{
+	width: 20px; 
+	height: 20px; 
+	border: 1px solid black; 
+	border-radius: 50%; 
+	margin: 0 2px; 
+	float: left;
+	position: relative;
+	top: 12px;
+}
+
+.current-dot{
+	background: repeating-linear-gradient(
+		45deg, 
+		#fff, 
+		#000 3px, 
+		#fff 3px);
 }

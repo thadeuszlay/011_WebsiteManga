@@ -22,7 +22,42 @@ div.comicPanel{
 div.picView{
 		height: 440px;
 }
-#bubble{
+#bubbleLvl1{
+		max-height:300px;
+		max-width: 450px;
+		border: 1.3px solid black;
+		border-radius: 10px;
+		word-wrap: break-word;
+		background-color: rgba(255,255,255,.7);
+		position: relative;
+		left: 10px;
+		top: 10px;
+		text-align: justify;
+		float: right;
+		padding: 2px 7px;
+		margin: 1px 9px;
+		font-size: 22px;
+		font-family:"Comic Sans MS", cursive, sans-serif;  position:relative;
+}
+#bubbleLvl1::after{
+		content: "";
+		border-top: 10px solid transparent;
+		border-right: 20px solid white;
+		border-bottom: 9px solid transparent;	
+		position: absolute;
+		left: -19px;
+		top: 140px;
+}
+#bubbleLvl1::before{
+		content:"";
+		border-top: 11px solid transparent;
+		border-right: 21px solid black;
+		border-bottom: 11px solid transparent;	
+		position: absolute;
+		left: -21px;
+		top: 139px;			
+}
+#bubbleLvl2{
 		max-height: 200px;
 		max-width: 350px;
 		border: 1.3px solid black;
@@ -38,9 +73,8 @@ div.picView{
 		margin: 1px 9px;
 		font-size: 22px;
 		font-family:"Comic Sans MS", cursive, sans-serif;  position:relative;
-
 }
-#bubble::after{
+#bubbleLvl2::after{
 		content: "";
 		border-top: 10px solid transparent;
 		border-right: 20px solid white;
@@ -49,7 +83,75 @@ div.picView{
 		left: -19px;
 		top: 140px;
 }
-#bubble::before{
+#bubbleLvl2::before{
+		content:"";
+		border-top: 11px solid transparent;
+		border-right: 21px solid black;
+		border-bottom: 11px solid transparent;	
+		position: absolute;
+		left: -21px;
+		top: 139px;			
+}
+#bubbleLvl3{
+		max-height: 200px;
+		max-width: 350px;
+		border: 1.3px solid black;
+		border-radius: 10px;
+		word-wrap: break-word;
+		background-color: rgba(255,255,255,.7);
+		position: relative;
+		text-align: justify;
+		float: right;
+		padding: 2px 7px;
+		font-size: 22px;
+		font-family:"Comic Sans MS", cursive, sans-serif;  position:relative;
+		margin: 10px auto;
+}
+#bubbleLvl3::after{
+		content: "";
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 29px solid white;	
+		position: absolute;
+		left: 19px;
+		top: 189px;
+}
+#bubbleLvl3::before{
+		content:"";
+		border-left: 21px solid transparent;			
+		border-right: 21px solid transparent;		
+		border-top: 30px solid black;
+		position: absolute;
+		left: 18px;
+		top: 191px;			
+}
+#bubbleLvl4{
+		max-height: 400px;
+		max-width: 550px;
+		border: 1.3px solid black;
+		border-radius: 10px;
+		word-wrap: break-word;
+		background-color: rgba(255,255,255,.7);
+		position: relative;
+		left: 10px;
+		top: 10px;
+		text-align: justify;
+		float: right;
+		padding: 2px 7px;
+		margin: 1px 9px;
+		font-size: 18px;
+		font-family:"Comic Sans MS", cursive, sans-serif;  position:relative;
+}
+#bubbleLvl4::after{
+		content: "";
+		border-top: 10px solid transparent;
+		border-right: 20px solid white;
+		border-bottom: 9px solid transparent;	
+		position: absolute;
+		left: -19px;
+		top: 140px;
+}
+#bubbleLvl4::before{
 		content:"";
 		border-top: 11px solid transparent;
 		border-right: 21px solid black;

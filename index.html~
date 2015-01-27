@@ -30,8 +30,11 @@
 	<a name="lvl1">
 		<div class="level one">
    		<h2>About</h2>
-    		<p>You can manganize your pictures here, if the following rules are met:</p>
-			<p>Please view my pencil portrait gallery below to give you a general idea what I will accepted. If you like, you can send your request along with your picture to me.</p>
+   		<div style="margin: 0 auto;">
+   			<div id="description" class="comicPanel col-md-7">
+					<p id="bubbleLvl1">You can manganize your pictures here.<br/><br/>Please have a look at my pencil portrait gallery below to give you a general idea what I will accepted. If you like, you can send your request along with your picture to me: request[at]manganize.me</p>
+				</div>
+			</div>
 		</div>
 	</a>
 
@@ -40,53 +43,53 @@
   			<div class="centerFrame">
   				<h2>Manga</h2> 
 				<div id="description" class="comicPanel col-md-7">
-					<p id="bubble">On the next panel you can see a gallery. Move your mouse over the image and you'll see the original picutre. Clicking on the arrow buttons below will switch to the next picture.</p>
+					<p id="bubbleLvl2">On the next panel you can see a gallery. Move your mouse over the image and you'll see the original picutre. Clicking on the arrow buttons below will switch to the next picture.</p>
 				</div>
 				<div class=" col-md-4">
-					<div id="gallery" class="comicPanel view" style="overflow: hidden; height: 440px;">
-						<div id="flipContainer" class="portrait current-pic">
+					<div id="gallery" class="comicPanel picView">
+					
+						<div id="flipContainer" class="portrait-lvl2 current-pic-lvl2">
 							<div id="flipCard" class="shadow">
   								<div class="front face">
-    								<img src="pic/cora.jpg" alt="front"/>
+    								<img src="pic/girl_dog.png" alt="front"/>
   								</div>
   								<div class="back face center">
-									<img src="pic/lovely-bride.jpg" alt="back"/>
+									<img src="pic/girl_dog.jpg" alt="back"/>
   								</div>
 							</div>
 						</div>
 						
-						<div id="flipContainer" class="portrait">
+						<div id="flipContainer" class="portrait-lvl2">
 							<div id="flipCard" class="shadow">
   								<div class="front face">
-    								<img src="pic/devil.jpg" alt="front"/>
+    								<img src="pic/manganize.png" alt="front"/>
   								</div>
   								<div class="back face center">
-									<img src="pic/baby-in-snow.jpg" alt="back"/>
+									<img src="pic/manganize.jpg" alt="back"/>
   								</div>
 							</div>
 						</div>
 							
-						<div id="flipContainer" class="portrait">
+						<div id="flipContainer" class="portrait-lvl2">
 							<div id="flipCard" class="shadow">
   								<div class="front face">
-    								<img src="pic/man-103041_640.jpg" alt="front"/>
+    								<img src="pic/browneyes.png" alt="front"/>
   								</div>
   								<div class="back face center">
-									<img src="pic/yawn.jpg" alt="back"/>
+									<img src="pic/browneyes.jpg" alt="back"/>
   								</div>
 							</div>
 						</div>
 						
 					</div>
 					<div id="galleryController" class="comicPanel">
-						<div id="arrowLlvl2" style="float: left;">left</div>
+						<div id="arrowLlvl2" class="arrowL" style="float: left;">left</div>
 						<div style="margin-left: auto; margin-right: auto; width: 20%;">
-							<div class="dot current-dot"></div>																		
-							<div class="dot"></div>
-							<div class="dot"></div>						
+							<div class="dot-lvl2 current-dot-lvl2"></div>																		
+							<div class="dot-lvl2"></div>
+							<div class="dot-lvl2"></div>						
 						</div>					
-						<div id="arrowRlvl2" style="float: right;">right</div>
-											
+						<div id="arrowRlvl2" class="arrowR" style="float: right;">right</div>				
 					</div>
 				</div>
   			</div>
@@ -98,26 +101,56 @@
   			<h2>Chibi</h2>
    		<div class="centerFrame">
    			<div class=" col-md-4">
-					<div id="gallery" class="comicPanel view">
-						<div id="flipContainer">
+   			
+					<div id="gallery" class="comicPanel picView">
+
+						<div id="flipContainer" class="portrait-lvl3 current-pic-lvl3">
 							<div id="flipCard" class="shadow">
   								<div class="front face">
-    								<img src="pic/cora.jpg" alt="front"/>
+    								<img src="pic/chibi_cat.png" alt="front"/>
   								</div>
   								<div class="back face center">
-									<img src="pic/lovely-bride.jpg" alt="back"/>
+									<img src="pic/chibi_cat.jpg" alt="back"/>
   								</div>
 							</div>
 						</div>
+							
+						<div id="flipContainer" class="portrait-lvl3">
+							<div id="flipCard" class="shadow">
+  								<div class="front face">
+    								<img src="pic/chibiMatrose.png" alt="front"/>
+  								</div>
+  								<div class="back face center">
+									<img src="pic/chibiMatrose.jpg" alt="back"/>
+  								</div>
+							</div>
+						</div>
+											
+						<div id="flipContainer" class="portrait-lvl3">
+							<div id="flipCard" class="shadow">
+  								<div class="front face">
+    								<img src="pic/chibiKiss.png" alt="front"/>
+  								</div>
+  								<div class="back face center">
+									<img src="pic/chibiKiss.jpg" alt="back"/>
+  								</div>
+							</div>
+						</div>
+						
 					</div>
+					
 					<div id="galleryController" class="comicPanel">
-						<div style="border: 1px solid green; margin: 0 2px;"></div>
-						<div style="border: 1px solid green; margin: 0 2px;"></div>
-						<div style="border: 1px solid green; margin: 0 2px;"></div>
+						<div id="arrowLlvl3" class="arrowL" style="float: left;">left</div>
+						<div style="margin-left: auto; margin-right: auto; width: 20%;">
+							<div class="dot-lvl3 current-dot-lvl3"></div>																		
+							<div class="dot-lvl3"></div>
+							<div class="dot-lvl3"></div>						
+						</div>					
+						<div id="arrowRlvl3" class="arrowR" style="float: right;">right</div>				
 					</div>
 				</div>
    			<div id="description" class="comicPanel col-md-7">
-					<p id="bubble">On the next panel you can see a gallery. Move your mouse over the image and you'll see the original picutre. Clicking on the arrow buttons below will switch to the next picture.</p>
+					<p id="bubbleLvl3">On the next panel you can see a gallery. Move your mouse over the image and you'll see the original picutre. Clicking on the arrow buttons below will switch to the next picture.</p>
 				</div>
 			</div> 
   		</div>
@@ -129,29 +162,29 @@
    		<div class="col-md-6">
   				<div class="text">
   					<div class="passage">
-  						<p>Only style of commissions I'm currently open to. Send a single person photo reference and I'll send you back a the picture when a spot becomes available. You can pay me whatever price you think my work was worth to you. Similar commission work typically costs around EURO 15.
-						<br />
+  					   <div id="description" class="comicPanel col-md-11">							
+							<p id="bubbleLvl4">Only style of commissions I'm currently open to. Send a single person photo reference and I'll send you back a the picture when a spot becomes available. You can pay me whatever price you think my work was worth to you.
+							<br />
 						Type of emails/photos that will get ignored/trashed:
-							<ul>
-    							<li>Missing a photo</li>
-    							<li>Not including "I want this in Anime style" or "I want this in Chibi style"</li>
-    							<li>Deadlines ("Must be done for a birthday, anniversary, live event...")</li>
-    							<li>Photos of Couples or Groups</li>
-    							<li>Extreme close ups</li>
-    							<li>NSFL(Not Safe For Life) photos</li>
-    							<li>Blurry, small, bland, or complicated photos</li>
-    							<li>Person interacting with medium to large objects</li>
-    							<li>Person interacting with other people</li>
-    							<li>More than one pet</li>
-    							<li>Art Trades</li>
-    							<li>Not relating at all to portraits</li>
-    							<li>Offers to work on your commercial projects</li>
-							</ul>
-						</p>
+							<br />
+    							-Missing a photo<br />
+    							-Not including "I want this in Anime style" or "I want this in Chibi style"<br />
+    							- Deadlines ("Must be done for a birthday, anniversary, live event...")<br />
+    							- Photos of Couples or Groups<br />
+    							- Extreme close ups<br />
+    							- NSFL(Not Safe For Life) photos<br />
+    							- Blurry, small, bland, or complicated photos<br />
+    							- Person interacting with medium to large objects<br />
+    							- Person interacting with other people<br />
+    							- More than one pet<br />
+    							- Art Trades<br />
+    							- Not relating at all to portraits<br />
+    							- Offers to work on your commercial projects<br />
+							</p>
+						</div>
   					</div>
   				</div>  		
 			</div>
-			<div class="comicPanel col-md-3" style="height: 300px;"></div> 
   		</div>
   	</a>
   	

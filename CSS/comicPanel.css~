@@ -165,7 +165,7 @@ div.picView{
 		text-align: justify;
 		float: right;
 		padding: 2px 7px;
-		margin: 1px 9px;
+		margin: 1px 33px;
 		font-size: 18px;
 		font-family:"Comic Sans MS", cursive, sans-serif;  position:relative;
 }

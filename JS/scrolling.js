@@ -3,7 +3,7 @@ var homeH = $( window ).height(),
 pH.push("0"); 
 
 // create array with panel heights
-for (var s=1; s<6; s++) { 
+for (var s=1; s<5; s++) { 
   var po = $("#panels a:nth-child("+s+")").position();
   pH.push( Math.round(po.top));
 };
@@ -34,7 +34,7 @@ $( window ).scroll(function() {
   };
   
   // toggle footer
-  if ( $( window ).scrollTop() > homeH*5 )
+  if ( $( window ).scrollTop() > homeH*4 )
     $("#footer").addClass("up").removeClass("middle");
   else
     $("#footer").removeClass("up").addClass("middle");

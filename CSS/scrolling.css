@@ -19,10 +19,10 @@ a, a:visited {
   color:rgba(220,220,220,.8);
   text-decoration:none;
 }
-#icons > a:nth-child(2):hover { color:#44B4D5; }
-#icons > a:nth-child(3):hover { color:#9D9D00; }
-#icons > a:nth-child(4):hover { color:#6FFF44; }
-#icons > a:nth-child(5):hover { color:#F900F9; }
+#icons > a:nth-child(2):hover { color:LightSeaGreen ; }
+#icons > a:nth-child(3):hover { color:LightGreen; }
+#icons > a:nth-child(4):hover { color:HotPink; }
+#icons > a:nth-child(5):hover { color:LightSteelBlue; }
 
 h1, h2, p { color:#000; }
 h2 { padding-top:60px; }
@@ -75,10 +75,10 @@ ul { list-style: none; }
   margin: -20px 0px;
 }
 
-.one, .sel:nth-child(2) { background:#EAF7FB; }
-.two, .sel:nth-child(3) { background:#FFFFFD; }
-.three, .sel:nth-child(4) { background:#F5FFF2; }
-.four, .sel:nth-child(5) { background:#FFF9FF; }
+.one, .sel:nth-child(2) { background:LightSeaGreen ; }
+.two, .sel:nth-child(3) { background:LightGreen; }
+.three, .sel:nth-child(4) { background:HotPink; }
+.four, .sel:nth-child(5) { background:LightSteelBlue ; }
 
 #menu li.sel a{
 	font-style: strong!important;

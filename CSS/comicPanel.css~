@@ -141,7 +141,7 @@ div.picView{
 		border-top: 29px solid white;	
 		position: absolute;
 		left: 19px;
-		top: 130px;
+		top: 155px;
 }
 #bubbleLvl3::before{
 		content:"";
@@ -150,11 +150,11 @@ div.picView{
 		border-top: 30px solid black;
 		position: absolute;
 		left: 18px;
-		top: 132px;			
+		top: 157px;			
 }
 #bubbleLvl4{
-		max-height: 400px;
-		max-width: 950px;
+		max-height: 500px;
+		max-width: 1000px;
 		border: 1.3px solid black;
 		border-radius: 10px;
 		word-wrap: break-word;

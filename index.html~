@@ -149,7 +149,7 @@
 					</div>
 				</div>
    			<div id="description-lvl3" class="comicPanel col-md-7">
-					<p id="bubbleLvl3">On the next panel you can see a gallery. Move your mouse over the image and you'll see the original picutre. Clicking on the arrow buttons below will switch to the next picture.</p>
+					<p id="bubbleLvl3">Similar to above you can move your mouse over the picture on the left hand side panel in order to switch between the manganize version and the original picture. Clicking on the arrows will show you different pictures.</p>
 				</div>
 			</div> 
   		</div>
@@ -189,6 +189,7 @@
   	
   	<a name="lvl5">
   		<div class="level five">
+  		<!--Creator: Manga creator for users-->
   		</div>
   	</a>
 
@@ -212,33 +213,23 @@
   		<ul id="social">
   			<!--git hub-->
     		<li>
-    			<svg width="4" height="8">
-  					<rect x="5" y="2" rx="2" ry="2" width="25" height="25" style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
-				</svg>
+	    		<a href="https://github.com/thadeuszlay"><img src="pic/logo/GitHub-Mark-64px.png" alt="GitHub"></a>	
 			</li>
-			<!--youtube-->
+			<!--youtube-->			
     		<li>
-    			<svg overflow="visible">
-      			<circle cx="25" cy="25" r="25" fill="#2d2d2d" />
-      		</svg>
+	    		<a href="https://www.youtube.com/channel/UCpWIVQ60Lw8oeXmFqW-tqIw"><img src="pic/logo/YouTube-icon-dark.png" alt="YouTube" style="width: 90px;"></a>
       	</li>
 			<!--twitter-->    
     		<li>
-    			<svg overflow="visible">
-      			<circle cx="25" cy="25" r="25" fill="#2d2d2d" />
-      		</svg>
+   	  		<a href="https://twitter.com/thadeuszlay"><img src="pic/logo/Twitter_logo_white.png" alt="Twitter" style="width: 90px;"></a>
       	</li>
 			<!--blog spot-->    
     		<li>
-    			<svg overflow="visible">
-	      		<circle cx="25" cy="25" r="25" fill="#2d2d2d" />
-      		</svg>
-      	</li>
+				<a href="http://pleasefindencoded.blogspot.de/"><img src="pic/logo/blogger-logo-square-webtreatsetc.png" alt="BlogSpot" style="width: 90px;"></a>
+    		</li>
 			<!--projects--> 
     		<li>
-    			<svg overflow="visible">
-      			<circle cx="25" cy="25" r="25" fill="#2d2d2d" />
-      		</svg>
+    			<a href="sites/project.html"><img src="pic/logo/projectlogo.png" alt="Project" style="width: 80px;"></a>
       	</li>
   		</ul>
   </div>

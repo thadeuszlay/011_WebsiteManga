@@ -11,7 +11,6 @@ div.comicPanel{
 		border-right: 4px solid black;
 		border-bottom: 3px solid black;
 		border-left: 2px solid black;
-
 		border-width: 3px 3px 3px 3px;
 		border-radius:95% 2% 95% 2%/3% 95% 3% 95%;
   		transform: rotate(1deg);
@@ -21,6 +20,27 @@ div.comicPanel{
 }
 div.picView{
 		height: 440px;
+}
+#description-lvl1{
+	background: url("../pic/manga1.jpg");
+	background-position:center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: white;
+}
+#description-lvl2{
+	background: url("../pic/manga2.jpg");
+	background-position:center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: white;
+}
+#description-lvl3{
+	background: url("../pic/manga3.jpg");
+	background-position:center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: white;
 }
 #bubbleLvl1{
 		max-height:300px;
@@ -35,7 +55,7 @@ div.picView{
 		text-align: justify;
 		float: right;
 		padding: 2px 7px;
-		margin: 1px 9px;
+		margin: 1px 30px;
 		font-size: 18px;
 		font-family:"Comic Sans MS", cursive, sans-serif;  position:relative;
 }

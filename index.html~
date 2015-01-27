@@ -30,8 +30,8 @@
 	<a name="lvl1">
 		<div class="level one">
    		<h2>About</h2>
-   		<div style="margin: 0 auto;">
-   			<div id="description" class="comicPanel col-md-7">
+   		<div id="panel-lvl1" style="margin: 0 auto;">
+   			<div id="description-lvl1" class="comicPanel col-md-12">
 					<p id="bubbleLvl1">You can manganize your pictures here.<br/><br/>Please have a look at my pencil portrait gallery below to give you a general idea what I will accepted. If you like, you can send your request along with your picture to me: request[at]manganize.me</p>
 				</div>
 			</div>
@@ -42,7 +42,7 @@
   		<div class="level two">
   			<div class="centerFrame">
   				<h2>Manga</h2> 
-				<div id="description" class="comicPanel col-md-7">
+				<div id="description-lvl2" class="comicPanel col-md-7">
 					<p id="bubbleLvl2">On the next panel you can see a gallery. Move your mouse over the image and you'll see the original picutre. Clicking on the arrow buttons below will switch to the next picture.</p>
 				</div>
 				<div class=" col-md-4">
@@ -149,7 +149,7 @@
 						<div id="arrowRlvl3" class="arrowR" style="float: right;">right</div>				
 					</div>
 				</div>
-   			<div id="description" class="comicPanel col-md-7">
+   			<div id="description-lvl3" class="comicPanel col-md-7">
 					<p id="bubbleLvl3">On the next panel you can see a gallery. Move your mouse over the image and you'll see the original picutre. Clicking on the arrow buttons below will switch to the next picture.</p>
 				</div>
 			</div> 
@@ -162,7 +162,7 @@
    		<div class="col-md-6">
   				<div class="text">
   					<div class="passage">
-  					   <div id="description" class="comicPanel col-md-11">							
+  					   <div id="description-lvl4" class="comicPanel col-md-12">							
 							<p id="bubbleLvl4">Only style of commissions I'm currently open to. Send a single person photo reference and I'll send you back a the picture when a spot becomes available. You can pay me whatever price you think my work was worth to you.
 							<br />
 						Type of emails/photos that will get ignored/trashed:

@@ -42,6 +42,13 @@ div.picView{
 	background-repeat: no-repeat;
 	background-color: white;
 }
+#description-lvl4{
+	background: url("../pic/manga4.jpg");
+	background-position:center left;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: white;
+}
 #bubbleLvl1{
 		max-height:300px;
 		max-width: 450px;
@@ -55,7 +62,7 @@ div.picView{
 		text-align: justify;
 		float: right;
 		padding: 2px 7px;
-		margin: 1px 30px;
+		margin: 10px 40px;
 		font-size: 18px;
 		font-family:"Comic Sans MS", cursive, sans-serif;  position:relative;
 }
@@ -147,7 +154,7 @@ div.picView{
 }
 #bubbleLvl4{
 		max-height: 400px;
-		max-width: 550px;
+		max-width: 950px;
 		border: 1.3px solid black;
 		border-radius: 10px;
 		word-wrap: break-word;

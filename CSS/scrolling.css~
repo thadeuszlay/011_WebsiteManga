@@ -19,10 +19,11 @@ a, a:visited {
   color:rgba(220,220,220,.8);
   text-decoration:none;
 }
-#icons > a:nth-child(2):hover { color:#EAF7FB; }
-#icons > a:nth-child(3):hover { color:LightSeaGreen ; }
+#icons > a:nth-child(2):hover { color:LightSeaGreen ; }
+#icons > a:nth-child(3):hover { color:LightGreen; }
 #icons > a:nth-child(4):hover { color:HotPink; }
 #icons > a:nth-child(5):hover { color:LightSteelBlue; }
+#icons > a:nth-child(5):hover { color:red; }
 
 h1, h2, p { color:#000; }
 h2 { padding-top:60px; }
@@ -75,10 +76,11 @@ ul { list-style: none; }
   margin: -20px 0px;
 }
 
-.one, .sel:nth-child(2) { background:#EAF7FB; }
-.two, .sel:nth-child(3) { background:LightSeaGreen ; }
+.one, .sel:nth-child(2) { background:LightSeaGreen ; }
+.two, .sel:nth-child(3) { background:LightGreen; }
 .three, .sel:nth-child(4) { background:HotPink; }
 .four, .sel:nth-child(5) { background:LightSteelBlue ; }
+.five, .sel:nth-child(6) { background:red ; }
 
 #menu li.sel a{
 	font-style: strong!important;

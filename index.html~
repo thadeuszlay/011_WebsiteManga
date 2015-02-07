@@ -166,8 +166,8 @@
 							<br />
 						Type of emails/photos that will get ignored/trashed:
 							<br />
-    							-Missing a photo<br />
-    							-Not including "I want this in Anime style" or "I want this in Chibi style"<br />
+    							- Missing a photo<br />
+    							- Not including "I want this in Anime style" or "I want this in Chibi style"<br />
     							- Deadlines ("Must be done for a birthday, anniversary, live event...")<br />
     							- Photos of Couples or Groups<br />
     							- Extreme close ups<br />
@@ -242,6 +242,7 @@
 <script src="JS/scrolling.js"></script>
 <script src="JS/action.js"></script>
 <script src="JS/gallery.js"></script>
+<<<<<<< HEAD
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- MM1 -->
 <ins class="adsbygoogle"
@@ -268,6 +269,34 @@
      data-ad-slot="5402047738"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
+=======
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- MM1 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7937711919139168"
+     data-ad-slot="7018381738"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- MM2 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7937711919139168"
+     data-ad-slot="3925314539"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- MM3 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7937711919139168"
+     data-ad-slot="5402047738"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+>>>>>>> 777dd7f3c46ee4c300140cb458d8cb80dd0b71f3
 </script>
 </body>
 </html>

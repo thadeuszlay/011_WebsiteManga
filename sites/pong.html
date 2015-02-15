@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css" rel="stylesheet">
+html{
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+#court{
+	position: relative;
+}
+#border{
+	position: absolute; 
+	top: 25px; 
+	left: 25px; 
+	width: 350px; 
+	height: 250px;
+}
+#paddle{
+	position: absolute; 
+	top:30px; 
+	left:40px; 
+	width:15px; 
+	height:60px; 
+	z-index:3;
+}
+#enemy{
+	position: absolute; 
+	top:30px; 
+	left:340px; 
+	width:15px; 
+	height:60px;
+	z-index:3;
+}
+#bord{
+	position: absolute; 
+	top:25px; 
+	left:20px; 
+	width:5px; 
+	height:250px;
+	z-index:3;
+}
+#borde{
+	position: absolute; 
+	top:25px; 
+	left:375px; 
+	width:5px; 
+	height:250px;
+	z-index:3;
+}
+#bordet{
+	position: absolute; 
+	top:20px; 	
+	left:25px; 
+	width:350px; 
+	height:5px;
+	z-index:3px;
+}
+#bordit{
+	position: absolute; 
+	top:275px; 
+	left:25px; 
+	width:350px; 
+	height:5px;
+	z-index:3;
+}
+#ball{
+	position: absolute; 
+	top:120px; 
+	left:120px; 
+	width:16px; 
+	height:15px;
+	z-index=999;
+}
+#Aufschlag{
+	position: absolute; 
+	top:15px; 
+	left:400px;
+	z-index:3;
+}
+form[name="score"]{
+	position: relative; 
+
+}
+input[name="box"]{
+	position: absolute; 
+	top:69px; 
+	left:400px;
+	z-index:3;
+}
+input[name="scorebox"]{
+	position: absolute; 
+	top:120px; 
+	left:400px;
+	z-index:3;
+}
+input[name="reverse"]{
+	position: absolute; 
+	top:190px; 
+	left:400px;
+	z-index:3;
+}
+#Neu{
+	position: absolute; 
+	top:15px; 
+	left:499px;
+	z-index:3
+}
+#myPoints{
+	position: absolute; 
+	left:400px; 
+	top:50px;
+	z-index:5;
+}
+#oppPoints{
+	position: absolute; 
+	left:400px; 
+	top:100px;
+	z-index:5;
+}
+#rev{
+	position: absolute; 
+	left:400px; 
+	top:170px;
+	z-index:5;
+}
+#win{
+	position: absolute; 
+	font-size: 40px; 
+	left:15px; 
+	top:290px; 
+	visibility:hidden;
+	z-index:3;
+}
+#lose{
+	position: absolute; 
+	font-size: 40px; 
+	left:15px; 
+	top:290px; 
+	visibility:hidden;
+	z-index:3;
+}
+#goal{
+	position: absolute; 
+	font-size: 12px; 
+	left:15px; 
+	top:290px; 
+	visibility:visible;
+	z-index:3;
+}
+</style>
+</head>
+<!--   onKeypress="reverseIt()"  -->
+<body background="pong.jpg" onLoad="startUp()" onmousemove="movePaddle(event)" onkeydown="reverseBall(event)" text="green">
+<div id="court">
+	<img id="border" src="table.gif" >
+	<img id="paddle" src="pad.gif" >
+	<img id="enemy" src="pad.gif">
+	<img id="bord" src="border1.gif">
+	<img id="borde" src="border1.gif">
+	<img id="bordet" src="border3.gif">
+	<img id="bordit" src="border3.gif">
+	<img id="ball" src="ball.gif" />
+	<input id="Aufschlag" type="button" value="Aufschlag">
+<form name="score">
+	<input id="myPointsTB" type="text" name="box" SIZE="10" value=" 0 ">
+	<input id="oppPointsTB" type="text" name="scorebox" SIZE="10" value=" 0 ">
+	<input id="reverseTB" type="text" name="reverse" SIZE="10" value=" 0 ">
+
+	<input id="Neu" type="button" value="Neu">
+
+	<div id="myPoints">Deine Punkte:</div>
+	<div id="oppPoints">Punkte des Gegners:</div>
+	<div id="rev">Umkehrer:</div>
+	<div id="win">Super! Du hast gewonnen! Drücke auf "Neu" für eine neue Partie.</div>
+	<div id="lose">Schade! Du hast verloren. Drücke auf "Neu" für eine Revanche.</div>
+	<div id="goal">Bewege die Maus, um deinen Schläger - der rechte -  zu bedienen. Klicke jedesmal auf "Aufschlag" wenn ein Punkt gemacht wurde. In einem Spiel hast du zehn sog. "Richungsumkehrer" zur Verfügung. Damit kannst du die Richtung des Balls umkehren. Drücke die H-Taste, um den Ball horizontal umzukehren und die V-Taste, um den Ball in vertikaler Richtung umzukehren. Das Spiel ist beendet, sobald ein Spieler 5 Punkte erreicht hat. Drücke auf "Neu", um ein neues Spiel anzufangen. Viel Glück und Spaß, Andrea!</div>
+</div>
+</form>
+<script type="text/javascript" src="../JS/jQuery.js"></script>
+<script>
+window.onerror=new Function("return true");
+var dvx=-1;
+function main(){
+
+/*variables*/
+	var ball=document.getElementById("ball"), 
+	paddleLeft = document.getElementById("paddle"),
+	paddleRight = document.getElementById("enemy"),
+	aufschlagBtn=document.getElementById("Aufschlag"),
+	neuBtn=document.getElementById("Neu");
+
+	var myInterval=0;
+	var dx= dy=0;
+	var dvy=1;
+
+/*addEventListeners*/
+	$("#Neu").click(function(){
+		startUp();
+	});
+
+	$("#Aufschlag").click(function(){
+		clearInterval(myInterval);
+		if (!((document.getElementById("myPointsTB").value >4)||(document.getElementById("oppPointsTB").value > 4))){
+			ball.style.top="130px";
+			ball.style.left="200px";
+		
+			dx = 1+Math.random();
+			dy = 1+Math.random();
+			if (Math.round(Math.random()>.5)){dvy=-1;}
+			else{dvy=1;}
+			dvx=-1*dvx;
+			myInterval=setInterval(moveBall, 1);
+		}
+	});
+function startUp() {
+	/*init*/
+		paddleLeft.style.left="40px";
+		paddleLeft.style.top="130px";
+
+		paddleRight.style.left="340px";		
+		paddleRight.style.top="100px";
+	
+		ball.style.top="130px";
+		ball.style.left="200px";
+
+		score.scorebox.value = " 0 "
+		score.box.value= " 0 "
+		score.reverse.value = " 0 "
+
+		goal.style.visibility = "visible";
+		win.style.visibility = "hidden";
+		lose.style.visibility = "hidden";
+
+		clearInterval(myInterval);
+}
+function moveBall()
+{	
+	var xp = ball.style.left.split("px")[0];
+	var yp = ball.style.top.split("px")[0];
+
+	var padLeftX=paddleLeft.style.left.split("px")[0];
+	var padLeftY=paddleLeft.style.top.split("px")[0];
+	
+	var padRightX=paddleRight.style.left.split("px")[0];
+	var padRightY=paddleRight.style.top.split("px")[0];
+
+	ball.style.left=parseInt(xp)+(parseInt(dx)*parseInt(dvx))+"px";
+	ball.style.top=parseInt(yp)+(parseInt(dy)*parseInt(dvy))+"px";
+	
+//field
+	if ((xp>20) && (xp<365)){
+	//within field
+		if((yp>25) && (yp<250)){
+		//within field
+			paddle.style.top=(parseInt(yp)-20)+"px";
+		}
+	}
+	else{
+	//when touched left/right wall
+		clearInterval(myInterval);
+		var punkteL=document.getElementById("myPointsTB").value;
+		var punkteR=document.getElementById("oppPointsTB").value;
+
+		if (xp>=360){
+			//right player gets point
+			punkteR=parseInt(punkteR)+1;
+			document.getElementById("oppPointsTB").value=String(punkteR);	
+		}
+		if (xp<=30){	
+			//left player gets point
+			punkteL=parseInt(punkteL)+1;
+			document.getElementById("myPointsTB").value=String(punkteL);	
+		}
+		
+		if (punkteL>4){
+			document.getElementById("win").style.visibility="visible";
+			document.getElementById("lose").style.visibility="hidden";
+			document.getElementById("goal").style.visibility="hidden";	
+			history.go(-1);
+		}
+		if (punkteR>4){
+			document.getElementById("win").style.visibility="hidden";
+			document.getElementById("lose").style.visibility="visible";
+			document.getElementById("goal").style.visibility="hidden";	
+			history.go(-1);	
+		}
+	}
+	if ((yp>20)&&(yp<265)){
+	//within field
+	}
+	else{
+		//when touched side walls
+		dvy=-1*dvy;
+
+		ball.style.left=parseInt(xp)+(parseInt(dx)*parseInt(dvx))+"px";
+		ball.style.top=parseInt(yp)+(parseInt(dy)*parseInt(dvy))+(parseInt(1)*parseInt(dvy))+"px";
+	}
+//paddle
+//when toched the left paddle
+	if((xp<=48)&&(yp>paddle.style.top)&& (yp<(parseInt(paddle.style.top)+parseInt(60)))){
+		dvx=-1*dvx;
+		ball.style.left=parseInt(xp)+(parseInt(dx)*parseInt(dvx))+(parseInt(1)*parseInt(dvx))+"px";
+		ball.style.top=parseInt(yp)+(parseInt(dy)*parseInt(dvy))+"px";
+	}
+	else{
+		//console.log("ball.style.top: ", ball.style.top);
+		//console.log("ball.style.left: ", ball.style.left);					
+	}
+//when toched the right paddle
+	if((xp>330)&&(yp>paddleRight.style.top)&& (yp<(parseInt(paddleRight.style.top)+parseInt(60)))){
+		dvx=-1*dvx;
+		ball.style.left=parseInt(xp)+(parseInt(dx)*parseInt(dvx))+(parseInt(1)*parseInt(dvx))+"px";
+		ball.style.top=parseInt(yp)+(parseInt(dy)*parseInt(dvy))+"px";
+	}
+
+	}
+}
+
+function movePaddle(event){
+	
+	var ypos = event.clientY;
+	if((ypos>45) && (ypos<270)){
+		enemy.style.top = parseInt(ypos-40)+"px";
+	}
+}
+
+function reverseBall(event) {
+	if (event.keyCode===65){
+		var revPtn= document.getElementById("reverseTB").value
+		
+		console.log("revPtn", revPtn);
+		console.log("parseInt(revPtn)<6", parseInt(revPtn)<6);
+		if (parseInt(revPtn)<5){
+			dvx=-1*dvx;
+			revPtn=parseInt(revPtn)+1;
+			document.getElementById("reverseTB").value=String(revPtn);
+		}
+	}		
+}
+
+$(document).ready(main);
+</script>
+</body>
+</html>
+
+
